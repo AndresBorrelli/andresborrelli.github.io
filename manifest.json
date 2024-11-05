@@ -1,0 +1,17 @@
+{
+    "lang": "es",
+    "name": "Andrés Borrelli",
+    "short_name": "Andrés Borrelli",
+    "description": "Sitio personal Andrés Borrelli",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "resources/icons/icon512.png",
+            "sizes": "512x512"
+        }
+    ]
+}
