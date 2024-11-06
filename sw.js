@@ -30,6 +30,7 @@ self.addEventListener('fetch', event => {
           return fetchResponse;
         } catch (e) {
           // The network failed.
+          console.log('Fetch fallo')
         }
     }
   })());
