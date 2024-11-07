@@ -11,8 +11,7 @@ body {
     width: 300px;
     height: 150px;
     border: 10px solid #333;
-    border-radius: 150px 150px 0 0;
-    background: #fff;
+    background: url('../../images/dial.png');
     position: relative;
     overflow: hidden;
 }
@@ -28,5 +27,6 @@ body {
 #speedValue {
     font-size: 24px;
     margin-top: 20px;
+    color: #fff;
 }
 /* -------------------------------------------------------------------------- */

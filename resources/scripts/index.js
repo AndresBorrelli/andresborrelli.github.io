@@ -21,13 +21,23 @@ window.addEventListener('load', (e) => {
 //------------------------------------------------------------------------------
 function updateSpeedometer() {
     speedValueElement.innerText = `Speed: ${speed.toFixed(2)} km/h`;
-    const angle = (speed / 180) * 180; // Convert speed to angle
+    const angle = ((speed - 40) / 180) * 180; // Convert speed to angle
     needleElement.style.transform = `rotate(${angle - 90}deg)`;
 }
-
+//------------------------------------------------------------------------------
 function calculateSpeed(position) {
     // Get speed in meters per second and convert to kilometers per hour
-    speed = position.coords.speed * 3.6; // Convert m/s to km/h
+    //speed = position.coords.speed * 3.6; // Convert m/s to km/h
     updateSpeedometer();
 }
-
+//------------------------------------------------------------------------------
+function speedup() {
+    speed += 10;
+    updateSpeedometer();
+}
+//------------------------------------------------------------------------------
+function speeddown() {
+    speed -= 10;
+    updateSpeedometer();
+}
+//------------------------------------------------------------------------------
