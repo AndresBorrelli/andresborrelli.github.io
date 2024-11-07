@@ -27,7 +27,7 @@ function updateSpeedometer() {
 //------------------------------------------------------------------------------
 function calculateSpeed(position) {
     // Get speed in meters per second and convert to kilometers per hour
-    //speed = position.coords.speed * 3.6; // Convert m/s to km/h
+    speed = position.coords.speed * 3.6; // Convert m/s to km/h
     updateSpeedometer();
 }
 //------------------------------------------------------------------------------
